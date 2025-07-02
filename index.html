@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chúc Vợ A Ngủ Ngon 💗</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+        font-family: "Quicksand", sans-serif;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+        position: relative;
+      }
+
+      h1 {
+        font-family: "Great Vibes", cursive;
+        font-size: 3em;
+        margin-bottom: 20px;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      .typewriter {
+        font-size: 1.5em;
+        border-right: 2px solid #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+        animation: typing 5s steps(50, end) forwards, blink 1s step-end infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .hearts {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .heart {
+        width: 20px;
+        height: 20px;
+        background-color: pink;
+        position: absolute;
+        bottom: 0;
+        animation: floatUp 5s infinite ease-in;
+        opacity: 0.7;
+        transform: rotate(45deg);
+        border-radius: 50% 50% 0 0;
+      }
+
+      .heart::before,
+      .heart::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: pink;
+        position: absolute;
+        border-radius: 50%;
+      }
+
+      .heart::before {
+        top: -10px;
+        left: 0;
+      }
+
+      .heart::after {
+        left: -10px;
+        top: 0;
+      }
+
+      @keyframes floatUp {
+        0% {
+          transform: translateY(0) scale(1);
+          opacity: 0.7;
+        }
+        100% {
+          transform: translateY(-100vh) scale(1.5);
+          opacity: 0;
+        }
+      }
+
+      /* Tạo nhiều trái tim khác nhau */
+      .heart:nth-child(1) {
+        left: -50px;
+        animation-delay: 0s;
+      }
+      .heart:nth-child(2) {
+        left: 0px;
+        animation-delay: 1s;
+      }
+      .heart:nth-child(3) {
+        left: 50px;
+        animation-delay: 2s;
+      }
+      .heart:nth-child(4) {
+        left: 100px;
+        animation-delay: 3s;
+      }
+      .heart:nth-child(5) {
+        left: -100px;
+        animation-delay: 4s;
+      }
+
+      .sun {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 80px;
+        height: 80px;
+        background: #ffd700;
+        border-radius: 50%;
+        box-shadow: 0 0 30px 10px #fffab7;
+        animation: pulse 3s infinite ease-in-out;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.1);
+          opacity: 0.8;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sun"></div>
+    <h1>Ngủ ngon nhé vợ a 💕</h1>
+    <div class="typewriter">
+      Chúc em có giấc ngủ thật êm dịu, đầy mộng đẹp và ngọt ngào như chính em
+      vậy 💖
+    </div>
+
+    <div class="hearts">
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+    </div>
+  </body>
+</html>
